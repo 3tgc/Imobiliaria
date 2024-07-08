@@ -9,16 +9,42 @@ header {
     padding: 20px;
     text-align: center;
 }
+
+.container__buscador{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
 nav {
     background-color: #a79d7d;
     padding: 10px;
     text-align: center;
+    display: flex; /* Mantém o display como flex */
+    flex-direction: row; /* Altera de column para row */
+    align-items: center; /* Mantém os itens centralizados verticalmente */
+    justify-content: center; /* Adiciona centralização horizontal */
 }
 nav a {
     text-decoration: none;
     color: #333;
     padding: 10px 20px;
 }
+
+.button-style {
+    background-color: transparent; /* Cor de fundo transparente */
+    border: none; /* Sem borda */
+    color: black; /* Cor do texto */
+    font-size: 1em; /* Tamanho da fonte reduzido */
+    cursor: pointer; /* Cursor do mouse como ponteiro */
+    padding: 5px; /* Espaçamento interno ajustado */
+    margin: 5px 0; /* Margem externa */
+}
+
+.button-style:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+}
+
 nav a:hover {
     background-color: #ddd;
 }
@@ -26,6 +52,35 @@ section {
     padding: 20px;
 }
 
+.container__titulo1{
+    text-align: center;
+    align-items: center;
+}
+
+.container__titulo2{
+    text-align: center;
+    align-items: center;
+}
+
+.container__titulo3{
+    text-align: center;
+    align-items: center;
+}
+
+.container__titulo4{
+    text-align: center;
+    align-items: center;
+}
+
+.container__titulo5{
+    text-align: center;
+    align-items: center;
+}
+
+.container__titulo6{
+    text-align: center;
+    align-items: center;
+}
 
 
 
