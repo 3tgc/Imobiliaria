@@ -1,23 +1,74 @@
-body {
-    font-family: Arial, sans-serif;
+:root {
+    --azul-principal: #405D72;
+    --cinza-secundario: #758694;
+    --botao-bege: #F7E7DC;
+    --cor-de-fundo: #FFF8F3;
+    --fonte-principal: 'Inter';
+}
+
+* {
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(assets/img/background.jpg); /* Arrumar a imagem de fundo */
+}
 header {
-    background-color: #222831;
+    background-color: var(--azul-principal) ;
     color: white;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
+  
 }
 
-.container__buscador{
+.container__buscador {
     display: flex;
     flex-direction: column;
-    padding: 100px;
+    padding: 70px; /* Ajuste o valor de acordo com a necessidade */
+    width: 900px; /* Defina a largura desejada */
+    max-width: 100%; /* Garante que a largura não exceda o contêiner pai */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+
+.container__buscador .container__botao1 {
+    margin: 5px 0; /* Espaçamento entre os elementos */
+}
+
+.container__botao1 {
+    background-color: transparent; /* Cor de fundo transparente */
+    border: none; /* Sem borda */
+    color: black; /* Cor do texto */
+    font-size: 1.2em; /* Tamanho da fonte semelhante ao h2 */
+    cursor: pointer; /* Cursor do mouse como ponteiro */
+    padding: 10px; /* Espaçamento interno */
+}
+
+.container__nav2 {
+    background-color: transparent; /* Cor de fundo transparente */
+    border: none; /* Sem borda */
+    color: black; /* Cor do texto */
+    font-size: 1.2em; /* Tamanho da fonte semelhante ao h2 */
+    cursor: pointer; /* Cursor do mouse como ponteiro */
+    padding: 10px;
+}
+
+.container__botao1:hover {
+    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
 }
 
 nav {
-    background-color: #a79d7d;
+    background-color: var(--cinza-secundario);
     padding: 10px;
     text-align: center;
     display: flex; /* Mantém o display como flex */
@@ -30,6 +81,23 @@ nav a {
     color: #333;
     padding: 10px 20px;
 }
+
+nav button {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    text-align: center;
+    display: flex; /* Mantém o display como flex */
+    flex-direction: row; /* Altera de column para row */
+    align-items: center; /* Mantém os itens centralizados verticalmente */
+    justify-content: center; /* Adiciona centralização horizontal */
+}
+
 
 .button-style {
     background-color: transparent; /* Cor de fundo transparente */
@@ -52,34 +120,42 @@ section {
     padding: 20px;
 }
 
-.container__titulo1{
+.container__titulo1 {
     text-align: center;
     align-items: center;
+    margin-top: 20px; /* Ajuste o valor conforme necessário */
+    padding-top: 60px; /* Remove the previous padding-top */
+    font-weight: 1000;
 }
 
 .container__titulo2{
     text-align: center;
     align-items: center;
+    font-weight: var(--fonte-principal);
 }
 
 .container__titulo3{
     text-align: center;
     align-items: center;
+    font-weight: var(--fonte-principal);
 }
 
 .container__titulo4{
     text-align: center;
     align-items: center;
+    font-weight: var(--fonte-principal);
 }
 
 .container__titulo5{
     text-align: center;
     align-items: center;
+    font-weight: var(--fonte-principal);
 }
 
 .container__titulo6{
     text-align: center;
     align-items: center;
+    font-weight: var(--fonte-principal);
 }
 
 
